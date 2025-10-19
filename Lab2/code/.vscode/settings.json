@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "buddy_system_pmm.h": "c",
+        "defs.h": "c",
+        "error.h": "c",
+        "pmm.h": "c",
+        "list.h": "c",
+        "dtb.h": "c",
+        "string.h": "c",
+        "best_fit_pmm.h": "c"
+    }
+}
