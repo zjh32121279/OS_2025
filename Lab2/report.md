@@ -432,6 +432,14 @@ const struct pmm_manager default_pmm_manager = {
 
 ** first-fit运行结果 **
 ```
+DTB Init
+HartID: 0
+DTB Address: 0x82200000
+Physical Memory from DTB:
+  Base: 0x0000000080000000
+  Size: 0x0000000008000000 (128 MB)
+  End:  0x0000000087ffffff
+DTB init completed
 (THU.CST) os is loading ...
 Special kernel symbols:
   entry  0xffffffffc02000d8 (virtual)
@@ -445,6 +453,7 @@ physcial memory map:
 check_alloc_page() succeeded!
 satp virtual address: 0xffffffffc0205000
 satp physical address: 0x0000000080205000
+
 ```
 
 内核启动程序init.c:
@@ -516,6 +525,14 @@ Best-Fit算法是一种内存分配策略，其核心思想是在所有空闲内
 
 程序编译结果如下：
 ```
+DTB Init
+HartID: 0
+DTB Address: 0x82200000
+Physical Memory from DTB:
+  Base: 0x0000000080000000
+  Size: 0x0000000008000000 (128 MB)
+  End:  0x0000000087ffffff
+DTB init completed
 (THU.CST) os is loading ...
 Special kernel symbols:
   entry  0xffffffffc02000d8 (virtual)
