@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "trap.h": "c",
+        "assert.h": "c",
+        "mmu.h": "c",
+        "defs.h": "c",
+        "console.h": "c",
+        "kmonitor.h": "c",
+        "intr.h": "c",
+        "sync.h": "c",
+        "kdebug.h": "c",
+        "best_fit_pmm.h": "c",
+        "pmm.h": "c",
+        "clock.h": "c",
+        "memlayout.h": "c",
+        "sbi.h": "c",
+        "string.h": "c",
+        "dtb.h": "c",
+        "list.h": "c",
+        "riscv.h": "c",
+        "stat.h": "c",
+        "stdio.h": "c",
+        "default_pmm.h": "c"
+    }
+}
