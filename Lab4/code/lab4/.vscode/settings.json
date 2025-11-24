@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "list.h": "c",
+        "assert.h": "c",
+        "string.h": "c",
+        "sync.h": "c",
+        "sbi.h": "c",
+        "default_pmm.h": "c",
+        "defs.h": "c",
+        "elf.h": "c",
+        "pmm.h": "c",
+        "memlayout.h": "c",
+        "dtb.h": "c",
+        "mmu.h": "c",
+        "kmalloc.h": "c",
+        "stdlib.h": "c",
+        "sched.h": "c",
+        "proc.h": "c"
+    }
+}
