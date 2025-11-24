@@ -315,6 +315,27 @@ local_intr_restore(x)会恢复调用local_intr_save之前的状态，我们只�
 ```cpp
 local_intr_restore(flag);
 ```
+### 本实验创建的内核线程
+
+在/kern/process/proc.c中，我们创建了两个内核线程：空闲进程idleproc和初始化进程initproc。
+
+idleproc的作用：
+
+1.当没有其他进程需要运行时，调度器总是会选择idleproc，确保CPU永远有代码可以执行，避免系统挂起
+
+2.在空闲时执行简单的循环，降低功耗
+
+3.不断检查是否需要调度其他进程，保持中断响应能力，等待新任务到来
+
+initproc的作用：
+
+1.是所有用户进程的父进程，当用户进程的父进程退出时，initproc会收养这些孤儿进程
+
+2.负责回收僵尸进程的资源
+
+3.验证调度器能否在多个进程间正确切换，测试进程创建、切换、通信等机制是否正常工作
+
+内核从最开始只有内核初始化代码执行，到idleproc和initproc的交替执行，再到initproc创建更多用户进程，idleproc和initproc的创建和运行是内核从初始化状态到多任务运行环境的过渡标志。
 
 ## 扩展练习Challenge
 
