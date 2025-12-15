@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "pmm.h": "c",
+        "stdio.h": "c",
+        "unistd.h": "c",
+        "ulib.h": "c",
+        "defs.h": "c",
+        "console.h": "c",
+        "list.h": "c",
+        "kmalloc.h": "c",
+        "sync.h": "c",
+        "atomic.h": "c",
+        "error.h": "c",
+        "trap.h": "c",
+        "string.h": "c",
+        "syscall.h": "c",
+        "assert.h": "c",
+        "proc.h": "c",
+        "sched.h": "c",
+        "vmm.h": "c",
+        "stdarg.h": "c",
+        "memlayout.h": "c"
+    }
+}

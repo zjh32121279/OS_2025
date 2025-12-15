@@ -111,13 +111,15 @@ alloc_proc(void)
         proc->need_resched = 0;
         proc->parent = NULL;
         proc->mm = NULL;
-        memset(&proc->context, 0, sizeof(struct context));
+        memset(&(proc->context), 0, sizeof(struct context));
         proc->tf = NULL;
-        proc->pgdir = boot_pgdir_pa;
+        proc->pgdir = boot_pgdir_pa; 
         proc->flags = 0;
-        memset(proc->name, 0, PROC_NAME_LEN + 1);
-        list_init(&proc->list_link);
-        list_init(&proc->hash_link);
+        memset(proc->name, 0, PROC_NAME_LEN);
+        proc->wait_state = 0;
+        proc->cptr = NULL;
+        proc->optr = NULL;
+        proc->yptr = NULL;
     }
     return proc;
 }
